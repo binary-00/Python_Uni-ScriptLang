@@ -1,0 +1,1 @@
+pipe is native to shell, so run the command using shell services. should work fine.

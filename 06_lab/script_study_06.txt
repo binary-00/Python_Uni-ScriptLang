@@ -1,0 +1,37 @@
+config.json: 
+
+IP address of the client: 199.72.81.55
+Timestamp of the request: [01/Jul/1995:00:00:01 -0400]
+Request line: "GET /history/apollo/ HTTP/1.0"
+Status code of the response: 200
+Size of the response in bytes: 6245
+To use this log file with the script that prompts the user for configuration parameters and stores them in a JSON file, you would need to enter the following information when prompted:
+
+For Enter the name of the webserver log:, enter the name of the log file, such as NASA.
+For Enter the name of one of the HTTP request methods to be used as a filter for displaying:, enter one of the HTTP request methods that appear in the log file, such as GET.
+For Enter the logging level used by the application:, enter one of the valid logging levels for your application, such as DEBUG, INFO, WARNING, ERROR, or CRITICAL.
+For Enter the number of log lines to be displayed at once:, enter an integer value representing how many lines of the log file you want to display at once.
+For Enter your own parameter:, enter any custom parameter that you want to use in your application.
+
+# .json is lightweight data interchange format, easier for humans to read and machines to parse. EX - 
+>>>
+{
+   "name": "JohnWick",
+   "age": 37,
+   "city": "New York"
+}
+
+, and to parse; 
+
+>>>
+import json
+
+# Open and read the JSON file
+with open('data.json') as f:
+    data = json.load(f)
+
+# Access the data in the JSON object
+name = data['name']
+age = data['age']
+city = data['city']
+

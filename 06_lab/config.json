@@ -1,0 +1,7 @@
+{
+    "webserver_log": "NASA",
+    "http_request_method": "GET",
+    "logging_level": "INFO",
+    "log_lines_displayed": 10,
+    "custom_parameter": "TRUE"
+}
